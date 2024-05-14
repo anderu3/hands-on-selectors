@@ -2,25 +2,59 @@
 <html>
   <head>
     <style>
-       /* Add your CSS here */
+       * {
+        background-color: grey;
+       }
 
-      /* Basic Selectors */
-      {
-      
+      div {
+        font-size: 18px;
+      }
+
+      li {
+       font-size: 14px;
+      }
+
+      li:hover {
+         background-color: blue;
+      }
+
+      .highlight {
+        background-color: yellow;
+      }
+
+      #main-span {
+      color: blue;
+      }
+
+      span b {
+      background-color: green;
+      }
+
+      ul li:nth-child(odd) {
+      background-color: red;
+      }
+
+      ul li[data-info="special"] {
+        font-style: italic;
+      }
+
+      ul li::first-letter {
+        font-size: 24px;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
     <div>This is a div</div>
-    <span>This is a span</span>
-    <div>This is a div</div>
+    <span id="main-span">This is a span</span>
+    <div class="highlight">This is a div</div>
       <span>
         <b>Nested text goes here</b>
       </span>
     <ul>
-      <li>Item 1</li>
+      <li data-info="special">Item 1</li>
       <li>Item 2</li>
-      <li>Item 3</li>
+      <li data-info="special">Item 3</li>
       <li>Item 4</li>
       <li>Item 5</li>
     </ul>
